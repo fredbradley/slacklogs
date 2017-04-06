@@ -1,4 +1,5 @@
 ## Install Instructions
+### Step One
 Install this using Composer by adding the following to your shell.
 ```sh
 composer require fredbradley/slacklogs
