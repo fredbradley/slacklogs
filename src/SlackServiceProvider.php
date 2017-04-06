@@ -15,7 +15,7 @@ class SlackServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
 		$this->publishes([
-			__DIR__.'/config/config.php' => config_path('slacklogs.php')
+			__DIR__.'/config.php' => config_path('slacklogs.php')
 		], 'slackconfig');
 		
 		Log::listen(function()
