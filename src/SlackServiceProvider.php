@@ -18,7 +18,7 @@ class SlackServiceProvider extends \Illuminate\Support\ServiceProvider
 			__DIR__.'/config.php' => config_path('slacklogs.php')
 		], 'slackconfig');
 		
-		if (Config::has('slacklogs.webhook') || config('slacklogs.webhook')!=null)
+		if (Config::has('slacklogs.webhook') && config('slacklogs.webhook')!=null)
 		{
 			Log::listen(function()
 			{
@@ -51,7 +51,9 @@ class SlackServiceProvider extends \Illuminate\Support\ServiceProvider
 				$slackHandler->setFormatter(new Monolog\Formatter\LineFormatter());
 			});
 		} else {
-			Log::error("It looks like you're trying to use the SlackLogs Webhook, but you haven't defined a webhook in `config/slacklogs.php`");
+			$errmsg = "It looks like you're trying to use the SlackLogs Webhook, but you haven't defined a webhook in `config/slacklogs.php`";
+			throw new \Exception($errmsg);
+			Log::error($errmsg);
 		}
     }
 
