@@ -1,0 +1,13 @@
+{
+    "name": "fredbradley/snowmode",
+    "type": "metapackage",
+    "require": {
+        "monolog/monolog": "^1.22"
+    },
+    "authors": [
+        {
+            "name": "Fred Bradley",
+            "email": "hello@fredbradley.co.uk"
+        }
+    ]
+}
