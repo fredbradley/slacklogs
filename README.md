@@ -18,3 +18,17 @@ FredBradley\CranleighSchool\SlackServiceProvider::class
 ```
 Remember to ensure there's no trailing comma at the end of the array, but that there is one on the line above!
 
+### Step Three
+Publish the config:
+in your shell write:
+```sh
+php artisan vendor:publish --tag=slackconfig
+```
+### Step Four
+Edit your config: 
+ - `webhook` => the slack webhook you have set up at https://slack.com
+ - `name` => change this if you wish - it will be the name that slack posts as
+ - `channel_dev' => The name of the channel you wish to post errors of your local environment to
+ - `channel_master' => The name of the channel you wish to post errors of your production environment to
+ 
+ 
