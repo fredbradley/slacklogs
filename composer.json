@@ -1,25 +1,23 @@
 {
-    "name": "fredbradley/snowmode",
-    "type": "metapackage",
+    "name": "fredbradley/snowmoade",
+    "description": "My first composer package - trying to learn it with a basic bit of php that does not really do much.",
+    "license": "MIT",
+    "keywords": ["snowmode"],
+    "authors": [
+	    {
+		    "name": "Fred Bradley",
+		    "email": "frb@cranleigh.org"
+	    }
+    ],
     "require": {
-	"php" : ">=5.3.0",
-	"psr/log": "~1.0",
-        "monolog/monolog": "^1.22"
+		"php" : ">=5.3.0"
     },
 	"require-dev" {
-		"doctrine/couchdb": "~1.0@dev"
+		"phpunit/phpunit": "4.0.*"
 	},
-    "license": "GPL",
-	"extra": {
-		"branch-alias": { 
-			"dev-master": "master"
+	"autoload": {
+		"psr-4": {
+			"FredBradley\\Snowmode\\": "src"
 		}
-	},
-    "authors": [
-        {
-            "name": "Fred Bradley",
-            "email": "hello@fredbradley.co.uk"
-        }
-    ],
-    "minimum-stability": "stable"
+	}
 }
