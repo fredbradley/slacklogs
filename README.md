@@ -28,7 +28,7 @@ php artisan vendor:publish --tag=slackconfig
 Edit your config: 
  - `webhook` => the slack webhook you have set up at https://slack.com
  - `name` => change this if you wish - it will be the name that slack posts as
- - `channel_dev' => The name of the channel you wish to post errors of your local environment to
- - `channel_master' => The name of the channel you wish to post errors of your production environment to
+ - `channel_dev` => The name of the channel you wish to post errors of your local environment to
+ - `channel_master` => The name of the channel you wish to post errors of your production environment to
  
  
