@@ -1,8 +1,8 @@
 {
-    "name": "fredbradley/snowmode",
-    "description": "My first composer package - trying to learn it with a basic bit of php that does not really do much.",
+    "name": "fredbradley/slacklogs",
+    "description": "Add a Laravel Service Provider",
     "license": "MIT",
-    "keywords": ["snowmode"],
+    "keywords": ["laravel", "slack"],
     "authors": [
 	    {
 		    "name": "Fred Bradley",
