@@ -4,10 +4,12 @@
     "require": {
         "monolog/monolog": "^1.22"
     },
+    "license": "GPL",
     "authors": [
         {
             "name": "Fred Bradley",
             "email": "hello@fredbradley.co.uk"
         }
-    ]
+    ],
+    "minimum-stability": "stable"
 }
