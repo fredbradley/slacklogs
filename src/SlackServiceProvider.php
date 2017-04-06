@@ -18,7 +18,7 @@ class SlackServiceProvider extends \Illuminate\Support\ServiceProvider
 			__DIR__.'/config.php' => config_path('slacklogs.php')
 		], 'slackconfig');
 		
-		if (Config::has('slacklogs.webhook') || config('slacklogs.webhook')===null)
+		if (Config::has('slacklogs.webhook') || config('slacklogs.webhook')!=null)
 		{
 			Log::listen(function()
 			{
