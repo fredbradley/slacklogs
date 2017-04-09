@@ -5,12 +5,13 @@ namespace FredBradley\CranleighSchool;
 use Log;
 use Monolog;
 use Config;
-class SlackServiceProvider extends \Illuminate\Support\ServiceProvider
+use Illuminate\Support\ServiceProvider;
+class SlackServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
-     *
      * @return void
+     * @throws \Exception
      */
     public function boot()
     {
