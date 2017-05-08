@@ -4,7 +4,7 @@ return [
 
     'webhook' => null,
 	
-	'name' => 'Laravel Error ('.env('APP_NAME').')',
+	'name' => 'Laravel Error - ' . env('APP_NAME') . ' (' . strtoupper(env('APP_ENV')) . ')',
 	
 	'channel_dev' => '#general',
 	
