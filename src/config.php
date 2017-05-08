@@ -2,7 +2,8 @@
 
 return [
 
-    'webhook' => null,
+    'webhook' => env('SLACK_LOGGING_WEBHOOK', null),
+
 	
 	'name' => 'Laravel Error - ' . env('APP_NAME') . ' (' . strtoupper(env('APP_ENV')) . ')',
 	
