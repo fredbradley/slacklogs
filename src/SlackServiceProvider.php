@@ -50,7 +50,7 @@ class SlackServiceProvider extends ServiceProvider
                     $slackHandler->setFormatter(new Monolog\Formatter\LineFormatter());
                 });
             } else {
-                $errmsg = "It looks like you're trying to use the SlackLogs Webhook, but you haven't defined a webhook in `config/slacklogs.php`";
+                $errmsg = "It looks like you're trying to use the SlackLogs Webhook, but you haven't defined a webhook in `config/slacklogs.php` or your `.env` file.";
                 throw new \Exception($errmsg);
                 Log::error($errmsg);
             }
