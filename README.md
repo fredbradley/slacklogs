@@ -1,3 +1,4 @@
+# :warning: Deprecated. Laravel now has a nice native way of doing this much easier. 
 ## Install Instructions
 
 ### Step One
